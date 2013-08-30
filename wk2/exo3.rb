@@ -14,15 +14,7 @@ doctest: 1996 is a leap year
 =end
 
 def leap_year?(year)
-  if year % 400 == 0
-    true
-  elsif year % 100 == 0
-    false
-  elsif year % 4 == 0
-    true
-  else
-    false
-  end
+  year % 400 == 0 || year % 100 !=0 && year %4 == 0
 end
 
 =begin
